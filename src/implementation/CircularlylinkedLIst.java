@@ -50,6 +50,7 @@ public class CircularlylinkedLIst<T> {
 		if(isEmpty()) {
 			head = tail = newnode;
 		}
+		//firt always set newnode reference to first element/node which is the  head node
 		newnode.setNext(head);
 		head = newnode;
 		tail.setNext(head);
@@ -62,6 +63,7 @@ public class CircularlylinkedLIst<T> {
 		if(isEmpty()) {
 			tail=head=newnode;
 		}
+		//firt always set newnode reference to next element/node which is the head node
 		newnode.setNext(head);
 		tail.setNext(newnode);
 		tail = newnode;
